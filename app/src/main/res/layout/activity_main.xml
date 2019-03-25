@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ym.myaidlcustomerdemo.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_getbooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="获取书籍列表"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <Button
+        android:id="@+id/btn_addbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btn_getbooks"
+        android:text="添加书籍"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_getbooks"
+        android:layout_below="@+id/btn_getbooks"
+        android:layout_marginStart="20dp"
+        android:text="书名"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_bookname"
+        android:text="add data" />
+
+    <Button
+        android:id="@+id/btn_update_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_add_data"
+        android:text="update data" />
+
+    <Button
+        android:id="@+id/btn_delete_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_update_data"
+        android:text="delete data" />
+
+    <Button
+        android:id="@+id/btn_query_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_delete_data"
+        android:text="query data" />
+</RelativeLayout>
